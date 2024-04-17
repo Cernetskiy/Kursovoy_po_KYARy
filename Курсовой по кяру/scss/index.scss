@@ -1,0 +1,323 @@
+$mainblue:rgb(53, 53, 173);
+$notmainblue:rgb(109, 109, 197);
+$mainmargin:7%;
+@mixin flexcolumn()
+{
+    display:flex;
+    flex-flow:column nowrap;
+}
+@mixin flexrow()
+{
+    display:flex;
+    flex-flow:row nowrap;
+}
+body,html
+{
+    width:100%;
+    height:100%;
+    font-size:24px;
+}
+img
+{
+    width:50%;
+    height:50%;
+}
+a
+{
+    padding:0%;
+    margin:0%;
+    
+}
+.main
+{
+    @include flexcolumn();
+   
+    min-width:100%;
+    min-height:100%;
+}
+.menu
+{
+    background-color:$mainblue;
+    min-width:100%;
+    flex-grow:1;
+    min-height:20%;
+    max-height:20%;
+    @include flexrow();
+    justify-content:flex-start;
+    align-items:center;
+    
+}
+.content
+{
+    @include flexcolumn();
+    min-width: 100%;
+    align-self:center;
+   flex-grow:10;
+   
+}
+.contacts
+{
+    background-color:$notmainblue;
+    min-width:100%;
+    min-height:20%;
+    max-height:20%;
+    flex-grow:1;
+    margin-top: 5%;
+    padding-bottom: 10%;
+}
+
+.addiv
+{
+   @include flexcolumn();
+    gap: 0;
+    margin:4% $mainmargin;
+}
+.ad
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    width: 75%;
+    height: 25%;
+    border-radius: 15px;
+}
+.dot-navigation {
+    /* Center the content */
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dot-navigation__item {
+    /* Rounded border */
+    border-radius: 9999px;
+    height: 0.35rem;
+    width: 0.35rem;
+
+    /* Inactive dot */
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+
+    /* OPTIONAL: Spacing between dots */
+    cursor: pointer;
+    margin: 0 0.20rem;
+}
+
+/* Active dot */
+.dot-navigation__item:active {
+    background-color: $mainblue;
+}
+figure
+{
+    display:inline-block;
+    width:15%;
+    height:15%;
+    border:1px solid lightgray;
+    margin:0%;
+    padding-left:3%;
+    padding-right:3%;
+}
+figcaption
+{
+    height: 50%;
+    white-space:wrap;
+    word-break:break-all;
+    font-size: 15px;
+}
+p
+{
+    word-wrap: break-word;
+}
+h4
+{
+    text-indent: $mainmargin; 
+}
+.menu > *
+{
+    display:inline-block;
+   margin-top:auto;
+   margin-bottom:auto;
+}
+form 
+{
+    margin-left: 8%;
+  width: 70%;  
+  display:inline-block;
+}
+input
+{
+    padding: 1.4%;
+    border-radius: 15px;
+}
+button
+{
+    width: 10%;
+    padding: 0.9%;
+    border-radius: 15px;
+}
+input
+{
+    width: 70%;
+    height: 100%;
+}
+.osncatalog
+{
+    min-width:70%;
+    flex-grow: 6;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    justify-content: flex-end;
+    margin-right: 2%;
+    
+}
+.osncatalog div
+{
+    width: 20%;
+    height: auto;
+}
+.osncatalog figure
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.osncatalog img
+{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+.osncatalog b
+{
+    font-size: 20px;
+}
+.osncatalog .skidka
+{
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    right: 50%;
+    text-decoration: line-through;
+    
+    color: darkgray;
+    
+}
+.sort button
+{
+    background-color: $mainblue;
+    color: white;
+font-size:11px;
+    width:90%;
+    height:3%;
+    border:0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sort
+{
+  
+    min-height:10%;
+    min-width:10%;
+    flex-grow: 2;
+}
+.content1
+{
+   @include flexrow();
+    min-width: 100%;
+    align-self:center;
+   flex-grow:10;
+   justify-content: center;
+   margin-right: $mainmargin;
+   
+}
+.content2
+{
+    @include flexcolumn();
+    min-width: 100%;
+    align-self:center;
+   flex-grow:10;
+   
+   
+}
+.content2 .rec
+{
+    height: 5%;
+}
+.tovar
+{
+    margin-left: $mainmargin;
+   margin-right: $mainmargin;
+}
+.tovar img
+{
+    margin-left:5%;
+    width:20%;
+    height:20%;
+    float:left;
+}
+
+.rec
+{
+    min-width:70%;
+    overflow: hidden;
+    overflow-x: auto;
+	@include flexrow();
+    max-height: 10%;
+    margin-left: $mainmargin;
+    margin-right: $mainmargin;
+    gap: 2%;
+}
+.rec div
+{
+    min-width: 20%;
+    height: auto;
+}
+.rec figure
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.rec img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rec b
+{
+    font-size: 27px;
+}
+.buy
+{
+    font-weight: bold;
+    display: inline-block;
+    background-color: $mainblue;
+    color: white;
+    padding: 3% 25%;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skidka
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    text-decoration: line-through;
+    
+    color: darkgray;
+    
+}
