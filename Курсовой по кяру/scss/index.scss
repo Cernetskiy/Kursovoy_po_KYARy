@@ -17,6 +17,24 @@ body,html
     height:100%;
     font-size:24px;
 }
+.rec figure:hover
+{
+    transform: scale(1.1);
+    z-index:-1;
+}
+.rec figure:hover img 
+{
+    transform: scale(0.9);
+}
+.osncatalog div:hover
+{
+    transform: scale(1.1);
+    z-index:-1;
+}
+button:hover
+{
+    transform: scale(1.1);
+}
 img
 {
     width:50%;
@@ -24,10 +42,39 @@ img
 }
 a
 {
-    padding:0%;
-    margin:0%;
-    
+    padding: 0%;
+    margin: 0%;
+    text-decoration:none;
+    color:white;
 }
+a:hover
+{
+    transform: scale(1.1);
+}
+.asvg
+{
+    width: 5%;
+    height: 5%;
+}
+.break
+{
+    display:none;
+}
+.acatalog
+{
+display:inline-block;
+margin:auto;
+text-decoration:none;
+text-align:center;
+font-size:15px;
+background-color:white;
+color: black;
+  width: 10%;
+  padding: 0.9%;
+  border-radius: 15px;
+
+}
+
 .main
 {
     @include flexcolumn();
@@ -69,51 +116,87 @@ a
 .addiv
 {
    @include flexcolumn();
-    gap: 0;
-    margin:4% $mainmargin;
+   gap: 0;
+   margin: 4% 7%;
+   width: 100vh;
+   height: 60vh;
+   vertical-align:center;
+   margin-left: auto;
+   margin-right: auto;
+}
+.adimg
+{
+    position:relative;
+    min-width: 100%;
+   @include flexrow();
+    min-height: 100%;
+    margin-bottom:3%;
 }
 .ad
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    width: 75%;
-    height: 25%;
-    border-radius: 15px;
+    position:absolute;
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transition: left 0.3s;
+}
+.imgs
+{
+   border:1px solid black; 
+  display: block;
+ margin:auto;
+ padding:1%;
+  min-width: 100%;
+  min-height: 100%;
+  text-align:center; 
+}
+.arrow
+{ 
+z-index:0;
+cursor:pointer;
+color:$mainblue;
+  font-size: 30px;
+  border-radius: 10000px;
+  border:5px solid $mainblue;
+  padding:0% 2%;
+  padding-bottom: -1%;
+  height: 10%;
+  margin:auto 1%;
+  
 }
 .dot-navigation {
     /* Center the content */
-   
     display: flex;
     align-items: center;
     justify-content: center;
-
     /* Reset styles */
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.dot-navigation__item {
+  }
+  
+  .dot-navigation__item {
     /* Rounded border */
     border-radius: 9999px;
     height: 0.35rem;
     width: 0.35rem;
-
     /* Inactive dot */
     background-color: transparent;
     border: 1px solid #d1d5db;
-
     /* OPTIONAL: Spacing between dots */
     cursor: pointer;
-    margin: 0 0.20rem;
-}
-
-/* Active dot */
-.dot-navigation__item:active {
+    margin: 0 0.2rem;
+  }
+  
+  /* Active dot */
+  .dot-navigation__item:active {
     background-color: $mainblue;
-}
+  }
+  .dot-navigation__item:hover
+  {
+      transform: scale(1.1);
+  }
 figure
 {
     display:inline-block;
@@ -169,155 +252,297 @@ input
 }
 .osncatalog
 {
-    min-width:70%;
     flex-grow: 6;
     display: flex;
     flex-flow: row wrap;
-    gap: 2%;
-    justify-content: flex-end;
-    margin-right: 2%;
-    
-}
-.osncatalog div
-{
-    width: 20%;
-    height: auto;
-}
-.osncatalog figure
-{
+    justify-content: flex-start;
+    margin-left: 10%;
+    flex:0 0 35em;
+    gap:2%;
+   align-content:flex-start;
+   row-gap:1%;
+   
+   div 
+   {
+    flex: 0 0 10em;
+    align-self: flex-start;
+  }
+  figure 
+  {
     width: 100%;
     height: 100%;
     position: relative;
-}
-.osncatalog img
-{
-
+  }
+  img 
+  {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
     height: 40%;
-}
-.osncatalog b
-{
+  }
+  b 
+  {
     font-size: 20px;
-}
-.osncatalog .skidka
-{
+  }
+  .skidka 
+  {
     display: inline-block;
     position: absolute;
-    top: 38%;
+    top: 40%;
     right: 50%;
     text-decoration: line-through;
-    
     color: darkgray;
-    
+  }
 }
-.sort button
-{
-    background-color: $mainblue;
-    color: white;
-font-size:11px;
-    width:90%;
-    height:3%;
-    border:0;
-    font-weight: bold;
-    cursor: pointer;
-}
-.sort
-{
+  .sort {
+   height: 20vh;
+   width: 20vh;
+    flex-grow:0;
+    button 
+    {
+        background-color: $mainblue;
+        color: white;
+        font-size: 10px;
+        width: 50%;
+        height: 3vh;
+        border: 0;
+        font-weight: bold;
+        cursor: pointer;
+    }
+  }
   
-    min-height:10%;
-    min-width:10%;
-    flex-grow: 2;
-}
-.content1
-{
-   @include flexrow();
+  .content1 {
+    @include flexrow();
     min-width: 100%;
-    align-self:center;
-   flex-grow:10;
-   justify-content: center;
-   margin-right: $mainmargin;
-   
-}
-.content2
-{
-    @include flexcolumn();
+    align-self: center;
+    flex-grow: 10;
+    justify-content: center;
+    margin-right: 7%;
+  }
+  
+  .content2 {
+   @include flexcolumn();
     min-width: 100%;
-    align-self:center;
-   flex-grow:10;
-   
-   
-}
-.content2 .rec
-{
-    height: 5%;
-}
-.tovar
-{
-    margin-left: $mainmargin;
-   margin-right: $mainmargin;
-}
-.tovar img
-{
-    margin-left:5%;
-    width:20%;
-    height:20%;
-    float:left;
-}
-
-.rec
-{
-    min-width:70%;
+    align-self: center;
+    flex-grow: 10;
+    .rec 
+    {
+        height: 5%;
+    }
+  }
+  
+  .tovar {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size:30px;
+    font-weight:bold;
+    img {
+        margin-left: 5%;
+        width: 50vh;
+        height: 50vh;
+        float: left;
+      }
+  } 
+  
+  .rec {
+    min-width: 70%;
     overflow: hidden;
     overflow-x: auto;
-	@include flexrow();
+    @include flexrow();
     max-height: 10%;
-    margin-left: $mainmargin;
-    margin-right: $mainmargin;
+    margin-left: 7%;
+    margin-right: 7%;
     gap: 2%;
-}
-.rec div
-{
-    min-width: 20%;
-    height: auto;
-}
-.rec figure
-{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.rec img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.rec b
-{
-    font-size: 27px;
-}
-.buy
-{
+    div 
+    {
+        min-width: 10%;
+        flex: 0 0 12em;
+    }
+    figure 
+   {
+        width: 95%;
+        height: 95%;
+        position: relative;  
+    }
+    img 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    b
+    {
+        font-size: 27px;
+    }
+  }
+  
+  .buy { 
+  text-decoration:none;
+  padding:2% 0;
+  box-sizing: border-box;
     font-weight: bold;
     display: inline-block;
-    background-color: $mainblue;
+    background-color: rgb(53, 53, 173);
     color: white;
-    padding: 3% 25%;
+    width:100%;
+    height: 20%;
     border-radius: 25px;
     margin-left: auto;
+    vertical-align:middle;
     margin-right: auto;
-}
-.skidka
-{
+    text-align:center;
+    margin-bottom:5%;
+    margin-top:5%;
+  }
+  
+  .skidka {
     display: inline-block;
     position: absolute;
     top: 50%;
     right: 45%;
     text-decoration: line-through;
-    
     color: darkgray;
-    
-}
+  }
+  @media (min-width: 100px) and (max-width: 768px)
+  {
+  body 
+  {
+      font-size:13px;
+  }
+      
+      .rec b
+      {
+          font-size:16px;
+      }
+      .menu
+      {
+          flex-flow:row wrap;
+      }
+      form
+      {
+          width:75%;
+      }
+      form button
+      {
+          display:none;
+      }
+  .acatalog
+  {
+  font-size:13px;
+    width: 10%;
+    padding: 1.5%;
+    border-radius: 15px;
+  
+  }
+  .break
+  {
+      flex-basis: 100%;
+    height: 0;
+  }
+  .asvg
+  {
+      width: 15%;
+      height: 15%;
+      margin:0 auto;
+      
+  }
+  .menu 
+  {
+      padding-bottom:2%;
+  }
+  .arrow
+  {
+      font-size:20px;
+      border:3px solid blue;
+      padding:0% 3% 3% 3%;
+  }
+  .rec
+  {
+      gap:4%;
+      margin-left: 0%;
+    margin-right: 0%;
+  }
+  .rec div
+  {
+      flex: 0 0 16em;
+  }
+  
+  .buy
+  {
+      margin-top:0.5%;
+      margin-bottom:0%;
+  }
+  .rec figure
+  {
+  padding-bottom:5%;
+  }
+  .osncatalog figure
+  {
+        padding-bottom:10%;
+  }
+  h4
+  {
+      font-size:25px;
+      margin-left: 0%;
+    margin-right: 0%;
+  }
+  .tovar
+  {
+      margin-left: 0%;
+    margin-right: 0%;
+    font-size:20px;
+  }
+  .osncatalog div {
+    flex: 0 0 11em;
+    align-self: stretch;
+    margin-bottom:5%;
+  
+  }
+  .osncatalog
+  {
+      margin-left:20%;
+      flex:0 0 25em;
+      margin-left:5%;
+      gap:4%;
+      row-gap:0.13%;
+      margin-bottom:40%;
+  }
+  .sort button
+  {
+      border-radius:8px;
+      border:1px solid black;
+      flex:0 0 1em;
+      display:block;
+      height :25px;
+      width: 100%;
+      
+  }
+  .sort
+  {
+  flex:0 0 1em;
+      margin-left:2%;
+      flex-flow:column nowrap;
+  }
+  .skidka
+  {
+      top:43%;
+      left:25%;
+  }
+  .osncatalog .skidka
+  {
+      top:30%;
+      left:40%;
+      word-wrap: normal;
+      white-space: nowrap;
+  }
+  .addiv
+  {
+    height: 40vh;
+    width: 40vh;
+  }
+  .arrow
+  {
+    padding-bottom: 0%;
+  }
+  }

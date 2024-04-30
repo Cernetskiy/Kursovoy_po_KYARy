@@ -3,125 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница </title>
-   <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/index.css" />
+   <xml src="index.xml"></xml>
 </head>
 <body>
     <div class="main">
-        <div class="menu">
-            <a href="#" style="width: 5%;height: 5%;">    
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="394,20,700,700"><g id="document" fill="rgb(53, 53, 173)" fill-rule="nonzero" stroke="#000000" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><rect x="394" y="14.28571" transform="scale(1,1.4)" width="700" height="500" id="Shape 1 1" vector-effect="non-scaling-stroke"/></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="font-BebasNeueLight" font-weight="normal" font-size="60" text-anchor="middle" style="mix-blend-mode: normal"><g id="stage"><g id="layer1 1"><text x="255.08571" y="138.85714" transform="scale(2.91667,2.91667)" id="PointText 1">24god</text></g></g></g></svg>
-            </a>   
-              <button >
-                  Каталог товаров
-              </button>
-          <form action="" method="get">
-            <input name="s" placeholder="Искать здесь..." type="search">
-            <button type="submit">Поиск</button>
-          </form>
-  </div>
-  <h3 style="display: inline-block; margin-left: 10%;">Каталог товаров</h3>
+        <header class="menu">
+          <a href="index.html" class="asvg">    
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="394,20,700,700"><g id="document" fill="rgb(53, 53, 173)" fill-rule="nonzero" stroke="#000000" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><rect x="394" y="14.28571" transform="scale(1,1.4)" width="700" height="500" id="Shape 1 1" vector-effect="non-scaling-stroke"/></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="font-BebasNeueLight" font-weight="normal" font-size="60" text-anchor="middle" style="mix-blend-mode: normal"><g id="stage"><g id="layer1 1"><text x="255.08571" y="138.85714" transform="scale(2.91667,2.91667)" id="PointText 1">24god</text></g></g></g></svg>
+          </a> 
+          <div class="break"></div>  
+            <a href="catalog.html" class="acatalog">
+                Каталог
+            </a>
+        <form action="" method="get">
+          <input name="s" placeholder="Искать здесь..." type="search" id="text-to-find">
+          <button type="submit" class="button_for_search" onclick="javascript: FindOnPage('text-to-find',true); return false;">Поиск</button>
+        </form>
+</header>
+  <h3 style="display: inline-block; margin-left: 5%;">Каталог товаров</h3>
         <div class="content1">
             
             
            
-            <div class="osncatalog">
+            <main class="osncatalog">
                 
-                <div>
+                <div id="wheel"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
-                </div>
-                <div>
+                        <img id="fimg" src="koleso1.jpeg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name">/p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
+        </div>
+                <div id="wheel"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg" id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="comp"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
-                </div>
-                <div>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
+                </div >
+                <div id="comp"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="fridge"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="fridge"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                
+                <div id="chair"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                
+                <div id="sofa"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="sofa"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="sofa"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="chair"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-                <div>
+                <div id="comp"class="item">
                     <figure>
-                          <img src="koleso1.jpeg" alt="" >
-                          <figcaption><p><b>105,00р</b> <p class="skidka">107,00</p> <p>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</p><p class="buy">Нет в наличии</p></figcaption>
-                    </figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
                 </div>
-            </div>
-            <div class="sort">
-                <button>
-                    Цены по убыванию
+                <div id="wheel"class="item">
+                    <figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
+                </div>
+                <div id="fridge"class="item">
+                    <figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
+                </div>
+                 <div id="fridge"class="item">
+                    <figure>
+                        <img src="koleso1.jpeg"id="fimg" alt="" >
+                        <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
+                  </figure>
+                </div>
+            </main>
+            <aside class="sort">
+                <button id="reset">
+                    Сбросить
                 </button>
-                <button>
-                    Цены по возрастанию
-                </button>
-                <button>
+                <button id="btnsofa">
                     Диваны
                 </button>
-                <button>
+                <button id="btnchair">
                     Кресла
                 </button>
-                <button>
+                <button id="btnfridge">
                     Холодильники
                 </button>
-                <button>
+                <button id="btncomp">
                     Компьютеры
                 </button>
-            </div>
+                <button id="btnwheel">
+                    Шины
+                </button>
+            </aside>
         
         </div>
-        <div class="contacts">
+        <footer class="contacts">
             <table cellspacing="10">
                 <tr>
                     <td>
@@ -141,7 +163,128 @@
                     <td>Круглосуточно, без обеда и выходных</td>
                 </tr>
             </table>
-        </div>
+        </footer>
     </div>
+    <script>
+       
+        let reset =document.querySelector("#reset")
+        let btnsofa=document.querySelector("#btnsofa")
+        let items = document.querySelectorAll(".item");
+        let sofas = document.querySelectorAll("#sofa");
+        let comps = document.querySelectorAll("#comp");
+        let chairs = document.querySelectorAll("#chair");
+        let fridges = document.querySelectorAll("#fridge");
+        let wheels = document.querySelectorAll("#wheel");
+            function funcXml(){
+        fetch('index.xml')
+  .then(res => res.text())
+  .then(xmlString => {
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+    let prods = xmlDoc.getElementsByTagName('prod');
+    for(let i = 0; i < items.length; i++){
+        items[i].querySelector("#pri").innerHTML = prods[i].getElementsByTagName("price")[0].childNodes[0].nodeValue;
+        items[i].querySelector("#name").innerHTML = prods[i].getElementsByTagName("pname")[0].childNodes[0].nodeValue;
+        items[i].querySelector(".skidka").innerHTML = prods[i].getElementsByTagName("discount")[0].childNodes[0].nodeValue;
+       // items[i].querySelector("#fimg").src="'"+prods[i].getElementsByTagName("im")[0].childNodes[0].nodeValue+"'";
+    }
+  })}
+  funcXml();
+
+            
+reset.addEventListener("click", function()
+    {
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "block";
+       
+    }
+});
+btnsofa.addEventListener("click", function () {
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none";}
+        for (let i = 0; i < sofas.length; i++) {
+        sofas[i].style.display = "block";}
+});
+btnfridge.addEventListener("click", function () {
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none";}
+        for (let i = 0; i < fridge.length; i++) {
+        fridges[i].style.display = "block";}
+});
+btnwheel.addEventListener("click", function () {
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none";}
+        for (let i = 0; i < wheels.length; i++) {
+        wheels[i].style.display = "block";}
+});
+btnchair.addEventListener("click", function () {
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none";}
+        for (let i = 0; i < chairs.length; i++) {
+        chairs[i].style.display = "block";}
+});
+btncomp.addEventListener("click", function () {
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none";}
+        for (let i = 0; i < comps.length; i++) {
+        comps[i].style.display = "block";}
+});
+
+    var input,search,pr,result,result_arr, locale_HTML, result_store;
+var result = location.search.substring(1);
+//alert(result);
+if(result!=="")
+{
+document.getElementById('text-to-find').value=decodeURIComponent(result);
+FindOnPage('text-to-find',true);
+}
+function FindOnPage(name, status) {
+
+	input = document.getElementById(name).value; 
+	
+	if(input.length<3&&status==true)
+	{
+	alert('Для поиска вы должны ввести три или более символов');
+		FindOnPageBack();
+	}
+	if(input.length>=3)
+	{
+		function FindOnPageGo()
+		 {
+
+			search = '/'+input+'/g';  //делаем из строки регуярное выражение
+			for (let i = 0; i < items.length; i++) 
+			{
+        items[i].style.display = "none";
+    }
+			for(var k=0;k<items.length;k++)
+			{
+			
+			pr = items[k].innerHTML;
+			result = pr.match(/>(.*?)</g); 
+			result_arr = [];   
+
+			var warning = true;
+			for(var i=0;i<result.length;i++) {
+				if(result[i].match(eval(search))!=null)
+				 {
+					warning = false;
+					items[k].style.display="block";
+				}
+			}
+			
+	
+	}}}
+	if(status) { FindOnPageBack(); FindOnPageGo(); } 
+	if(!status) { FindOnPageBack(); }
+	}
+	function FindOnPageBack()
+		 { 
+		for (let j = 0; j < items.length; j++) 
+		{
+        items[j].style.display = "block";
+    }
+	}
+            </script>
 </body>
 </html>

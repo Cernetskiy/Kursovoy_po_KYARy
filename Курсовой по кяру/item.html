@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница </title>
-   <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/index.css" />
+   <xml src="index.xml"></xml>
 </head>
 <body>
     <div class="main">
         <div class="menu">
-            <a href="#" style="width: 5%;height: 5%;">    
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="394,20,700,700"><g id="document" fill="rgb(53, 53, 173)" fill-rule="nonzero" stroke="#000000" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><rect x="394" y="14.28571" transform="scale(1,1.4)" width="700" height="500" id="Shape 1 1" vector-effect="non-scaling-stroke"/></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="font-BebasNeueLight" font-weight="normal" font-size="60" text-anchor="middle" style="mix-blend-mode: normal"><g id="stage"><g id="layer1 1"><text x="255.08571" y="138.85714" transform="scale(2.91667,2.91667)" id="PointText 1">24god</text></g></g></g></svg>
-            </a>   
-              <button >
-                  Каталог товаров
-              </button>
-          <form action="" method="get">
-            <input name="s" placeholder="Искать здесь..." type="search">
-            <button type="submit">Поиск</button>
-          </form>
-  </div>
+          <a href="index.html" class="asvg">    
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="394,20,700,700"><g id="document" fill="rgb(53, 53, 173)" fill-rule="nonzero" stroke="#000000" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><rect x="394" y="14.28571" transform="scale(1,1.4)" width="700" height="500" id="Shape 1 1" vector-effect="non-scaling-stroke"/></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="font-BebasNeueLight" font-weight="normal" font-size="60" text-anchor="middle" style="mix-blend-mode: normal"><g id="stage"><g id="layer1 1"><text x="255.08571" y="138.85714" transform="scale(2.91667,2.91667)" id="PointText 1">24god</text></g></g></g></svg>
+          </a> 
+          <div class="break"></div>  
+            <a href="catalog.html" class="acatalog">
+                Каталог
+            </a>
+         <form action="" method="get">
+          <input name="s" placeholder="Искать здесь..." type="search" id="text-to-find">
+          <button type="submit" class="button_for_search" onclick="window.location.href='catalog.html?'+getElementById('text-to-find').value;return false;">Поиск</button>
+        </form>
+</div>
         
         <div class="content2">
            <div class="tovar">
@@ -77,19 +79,19 @@
                <h3>
                    Обзор 
                </h3>
-               Сезон летняя шина
-                Тип автомобиля легковой
-                Ширина профиля 195 мм
-                Высота профиля 65
-                Диаметр 15"
+               Сезон: летняя шина<br>
+                Тип автомобиля: легковой<br>
+                Ширина профиля: 195 мм<br>
+                Высота профиля: 65<br>
+                Диаметр: 15"<br>
  
-Технические характеристики
-Конструкция радиальные
-Индекс нагрузки 91
-Максимальная нагрузка (на одну шину) 615 кг
-Индекс максимальной скорости H (до 210 км/ч)
-Способ герметизации бескамерные
-Технология RunFlat нет
+Технические характеристики<br>
+Конструкция: радиальные<br>
+Индекс нагрузки: 91<br>
+Максимальная нагрузка (на одну шину): 615 кг<br>
+Индекс максимальной скорости: H (до 210 км/ч)<br>
+Способ герметизации: бескамерные<br>
+Технология RunFlat: нет<br>
            </div>
            
         </div>
@@ -116,5 +118,6 @@
             </table>
         </div>
     </div>
+    
 </body>
 </html>
