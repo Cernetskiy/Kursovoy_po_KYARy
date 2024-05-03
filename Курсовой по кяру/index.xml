@@ -9,85 +9,85 @@
     <prod>
         <pname>Шины Ikon NORDMAN 8 185/65 R14 90T Шипованные</pname>
         <price>97,00р</price>
-        <discount></discount>
+        <discount> </discount>
         <im>koleso2.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>10</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>Компьютер офисный без монитора на базе процессора AMD Athlon 200GE</pname>
+        <price>749,90р</price>
+        <discount> </discount>
+       <im>comp1.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-        <im></im>
+        <pname>Компьютер мультимедийный без монитора на базе процессора AMD A8-9600</pname>
+        <price>853,55р</price>
+        <discount>1022,48р</discount>
+        <im>comp2.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>Холодильник Hyundai CO1002 (серебристый)</pname>
+        <price>499.00р</price>
+        <discount> </discount>
+       <im>fridge.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-        <im></im>
+        <pname>Холодильник ATLANT MX-2822-80</pname>
+        <price>801.00р</price>
+        <discount> </discount>
+        <im>fridge2.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>Стул Relmax TLD042 (синий)</pname>
+        <price>41.00р</price>
+        <discount> </discount>
+       <im>chair1.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-        <im></im>
+        <pname>Надувной диван БИВАН 2.0 BVN17-ORGNL-CAM (хаки)</pname>
+        <price>159.00р</price>
+        <discount> </discount>
+        <im>sofa1.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>Надувной диван БИВАН Классический BVN18-CLS-CAM (хаки)</pname>
+        <price>119.00р</price>
+        <discount> </discount>
+       <im>sofa2.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-        <im></im>
+        <pname>Диван Виена Velvet Smoke</pname>
+        <price>1800,00р.</price>
+        <discount>2000,00р</discount>
+        <im>sofa3.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>Стул деревянный ГМ 3019</pname>
+        <price>513,25р</price>
+        <discount> </discount>
+       <im>chair2.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-        <im></im>
+        <pname>Компьютер мультимедийный с монитором 22" на базе процессора AMD Ryzen 3 3200G</pname>
+        <price>1416,98р</price>
+        <discount> </discount>
+        <im>comp3.png</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>WestLake Z-107 Zuper Eco 155/65R13 T</pname>
+        <price>70,00р</price>
+        <discount> </discount>
+       <im>koleso3.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-        <im></im>
+        <pname>Холодильник Beko B3RCNK402HX KZ RU</pname>
+        <price>1 499,00р</price>
+        <discount> </discount>
+        <im>fridge3.jpeg</im>
     </prod>
     <prod>
-        <pname>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</pname>
-        <price>107</price>
-        <discount>105</discount>
-       <im></im>
+        <pname>Холодильник Haier HB18FGSAAARU</pname>
+        <price>6 190,00р</price>
+        <discount> </discount>
+       <im>fridge4.jpeg</im>
     </prod>
 </products>
