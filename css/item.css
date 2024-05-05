@@ -1,0 +1,309 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.rec figure:hover {
+  box-shadow: 0px 0px 10px 10px rgb(221, 221, 221);
+  z-index: 10;
+}
+
+h3 {
+  margin-left: 3%;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+a {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.asvg {
+  width: 5%;
+  height: 5%;
+  margin-right: 5%;
+}
+
+.break {
+  display: none;
+}
+
+.acatalog {
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  width: 10%;
+  padding: 0.9%;
+  border-radius: 15px;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.menu {
+  background-color: rgb(53, 53, 173);
+  min-width: 100%;
+  flex-grow: 1;
+  min-height: 20%;
+  max-height: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts {
+  background-color: rgb(109, 109, 197);
+  min-width: 100%;
+  min-height: 20%;
+  max-height: 20%;
+  flex-grow: 1;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  font-size: 17px;
+}
+
+figure {
+  display: inline-block;
+  width: 15%;
+  height: 15%;
+  border: 1px solid lightgray;
+  margin: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+figcaption {
+  height: 50%;
+  white-space: wrap;
+  font-size: 15px;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+h4 {
+  text-indent: 7%;
+}
+
+.menu > * {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+form {
+  margin-left: 8%;
+  width: 70%;
+  display: inline-block;
+}
+
+input {
+  padding: 1.4%;
+  border-radius: 15px;
+}
+
+button {
+  width: 10%;
+  padding: 0.9%;
+  border-radius: 15px;
+}
+
+input {
+  width: 70%;
+  height: 100%;
+}
+
+#name {
+  height: 50px;
+}
+
+.content2 {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  align-self: center;
+  flex-grow: 10;
+}
+.content2 .rec {
+  height: 5%;
+}
+
+.tovar {
+  margin-left: 7%;
+  margin-right: 7%;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tovar img {
+  margin-left: 5%;
+  width: 50vh;
+  height: 50vh;
+  float: left;
+}
+
+.rec {
+  min-width: 70%;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  max-height: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  gap: 2%;
+}
+.rec .buy {
+  margin-bottom: 25%;
+}
+.rec div {
+  min-width: 10%;
+  flex: 0 0 14em;
+}
+.rec figure {
+  width: 95%;
+  height: 95%;
+  position: relative;
+}
+.rec img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rec b {
+  font-size: 27px;
+}
+
+.buy {
+  text-decoration: none;
+  padding: 2% 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: inline-block;
+  background-color: rgb(53, 53, 173);
+  color: white;
+  width: 100%;
+  height: 20%;
+  border-radius: 25px;
+  margin-left: auto;
+  vertical-align: middle;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.skidka {
+  display: inline-block;
+  position: absolute;
+  top: 46%;
+  right: 45%;
+  text-decoration: line-through;
+  color: darkgray;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  .rec b {
+    font-size: 16px;
+  }
+  .menu {
+    flex-flow: row wrap;
+  }
+  form {
+    width: 75%;
+  }
+  form button {
+    display: none;
+  }
+  .acatalog {
+    font-size: 13px;
+    width: 10%;
+    padding: 1.5%;
+    border-radius: 15px;
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .asvg {
+    width: 15%;
+    height: 15%;
+    margin: 0 auto;
+  }
+  .menu {
+    padding-bottom: 2%;
+  }
+  .rec {
+    gap: 4%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .rec div {
+    flex: 0 0 16em;
+  }
+  .buy {
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+  }
+  .rec figure {
+    padding-bottom: 5%;
+  }
+  h4 {
+    font-size: 25px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .tovar {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 20px;
+  }
+  .skidka {
+    top: 43%;
+    left: 25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .op {
+    font-size: 17px;
+  }
+  .contacts {
+    margin-top: 20%;
+  }
+  .asvg {
+    margin-right: 8%;
+  }
+  .tovar {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+}

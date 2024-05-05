@@ -1,0 +1,495 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+
+.rec figure:hover {
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.rec figure:hover img {
+  transform: scale(0.9);
+}
+
+.osncatalog div:hover {
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+a {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.asvg {
+  width: 5%;
+  height: 5%;
+}
+
+.break {
+  display: none;
+}
+
+.acatalog {
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  width: 10%;
+  padding: 0.9%;
+  border-radius: 15px;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.menu {
+  background-color: rgb(53, 53, 173);
+  min-width: 100%;
+  flex-grow: 1;
+  min-height: 20%;
+  max-height: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  align-self: center;
+  flex-grow: 10;
+}
+
+.contacts {
+  background-color: rgb(109, 109, 197);
+  min-width: 100%;
+  min-height: 20%;
+  max-height: 20%;
+  flex-grow: 1;
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+
+.addiv {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0;
+  margin: 4% 7%;
+  width: 100vh;
+  height: 60vh;
+  vertical-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adimg {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 100%;
+  margin-bottom: 3%;
+}
+
+.ad {
+  position: absolute;
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transition: left 0.3s;
+}
+
+.imgs {
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+  padding: 1%;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+.arrow {
+  z-index: 0;
+  cursor: pointer;
+  color: rgb(53, 53, 173);
+  font-size: 30px;
+  border-radius: 10000px;
+  border: 5px solid rgb(53, 53, 173);
+  padding: 0% 2%;
+  padding-bottom: -1%;
+  height: 10%;
+  margin: auto 1%;
+}
+
+.dot-navigation {
+  /* Center the content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dot-navigation__item {
+  /* Rounded border */
+  border-radius: 9999px;
+  height: 0.35rem;
+  width: 0.35rem;
+  /* Inactive dot */
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  /* OPTIONAL: Spacing between dots */
+  cursor: pointer;
+  margin: 0 0.2rem;
+}
+
+/* Active dot */
+.dot-navigation__item:active {
+  background-color: rgb(53, 53, 173);
+}
+
+.dot-navigation__item:hover {
+  transform: scale(1.1);
+}
+
+figure {
+  display: inline-block;
+  width: 15%;
+  height: 15%;
+  border: 1px solid lightgray;
+  margin: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+figcaption {
+  height: 50%;
+  white-space: wrap;
+  word-break: break-all;
+  font-size: 15px;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+h4 {
+  text-indent: 7%;
+}
+
+.menu > * {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+form {
+  margin-left: 8%;
+  width: 70%;
+  display: inline-block;
+}
+
+input {
+  padding: 1.4%;
+  border-radius: 15px;
+}
+
+button {
+  width: 10%;
+  padding: 0.9%;
+  border-radius: 15px;
+}
+
+input {
+  width: 70%;
+  height: 100%;
+}
+
+.osncatalog {
+  flex-grow: 6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-left: 10%;
+  flex: 0 0 35em;
+  gap: 2%;
+  align-content: flex-start;
+  row-gap: 1%;
+}
+.osncatalog div {
+  flex: 0 0 10em;
+  align-self: flex-start;
+}
+.osncatalog figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.osncatalog img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+}
+.osncatalog b {
+  font-size: 20px;
+}
+.osncatalog .skidka {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  text-decoration: line-through;
+  color: darkgray;
+}
+
+.sort {
+  height: 20vh;
+  width: 20vh;
+  flex-grow: 0;
+}
+.sort button {
+  background-color: rgb(53, 53, 173);
+  color: white;
+  font-size: 10px;
+  width: 50%;
+  height: 3vh;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content1 {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 100%;
+  align-self: center;
+  flex-grow: 10;
+  justify-content: center;
+  margin-right: 7%;
+}
+
+.content2 {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  align-self: center;
+  flex-grow: 10;
+}
+.content2 .rec {
+  height: 5%;
+}
+
+.tovar {
+  margin-left: 7%;
+  margin-right: 7%;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tovar img {
+  margin-left: 5%;
+  width: 50vh;
+  height: 50vh;
+  float: left;
+}
+
+.rec {
+  min-width: 70%;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  max-height: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  gap: 2%;
+}
+.rec div {
+  min-width: 10%;
+  flex: 0 0 12em;
+}
+.rec figure {
+  width: 95%;
+  height: 95%;
+  position: relative;
+}
+.rec img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rec b {
+  font-size: 27px;
+}
+
+.buy {
+  text-decoration: none;
+  padding: 2% 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: inline-block;
+  background-color: rgb(53, 53, 173);
+  color: white;
+  width: 100%;
+  height: 20%;
+  border-radius: 25px;
+  margin-left: auto;
+  vertical-align: middle;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.skidka {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  text-decoration: line-through;
+  color: darkgray;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  .rec b {
+    font-size: 16px;
+  }
+  .menu {
+    flex-flow: row wrap;
+  }
+  form {
+    width: 75%;
+  }
+  form button {
+    display: none;
+  }
+  .acatalog {
+    font-size: 13px;
+    width: 10%;
+    padding: 1.5%;
+    border-radius: 15px;
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .asvg {
+    width: 15%;
+    height: 15%;
+    margin: 0 auto;
+  }
+  .menu {
+    padding-bottom: 2%;
+  }
+  .arrow {
+    font-size: 20px;
+    border: 3px solid blue;
+    padding: 0% 3% 3% 3%;
+  }
+  .rec {
+    gap: 4%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .rec div {
+    flex: 0 0 16em;
+  }
+  .buy {
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+  }
+  .rec figure {
+    padding-bottom: 5%;
+  }
+  .osncatalog figure {
+    padding-bottom: 10%;
+  }
+  h4 {
+    font-size: 25px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .tovar {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 20px;
+  }
+  .osncatalog div {
+    flex: 0 0 11em;
+    align-self: stretch;
+    margin-bottom: 5%;
+  }
+  .osncatalog {
+    margin-left: 20%;
+    flex: 0 0 25em;
+    margin-left: 5%;
+    gap: 4%;
+    row-gap: 0.13%;
+    margin-bottom: 40%;
+  }
+  .sort button {
+    border-radius: 8px;
+    border: 1px solid black;
+    flex: 0 0 1em;
+    display: block;
+    height: 25px;
+    width: 100%;
+  }
+  .sort {
+    flex: 0 0 1em;
+    margin-left: 2%;
+    flex-flow: column nowrap;
+  }
+  .skidka {
+    top: 43%;
+    left: 25%;
+  }
+  .osncatalog .skidka {
+    top: 30%;
+    left: 40%;
+    word-wrap: normal;
+    white-space: nowrap;
+  }
+  .addiv {
+    height: 40vh;
+    width: 40vh;
+  }
+  .arrow {
+    padding-bottom: 0%;
+  }
+}
