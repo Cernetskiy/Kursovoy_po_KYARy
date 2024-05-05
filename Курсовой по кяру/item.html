@@ -33,7 +33,7 @@
         
         <div class="content2">
            <div class="tovar">
-               <h2>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</h2>
+               <h4>Летняя шина Белшина Artmotion Бел-261 195/65R15 91H</h4>
                <img src="koleso1.jpeg" alt="">
                <p>107,00р </p>
                
@@ -42,7 +42,7 @@
            <div class="rec">
             <div class="item">
                 <figure>
-                    <img src="koleso1.jpeg"id="fimg" alt="" >
+                    <img id="fimg" alt="" >
                     <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
               </figure>
             </div>
@@ -50,22 +50,22 @@
                 </div>
                 
            <div class="op">
-               <h3>
-                   Обзор 
-               </h3>
-               Сезон: летняя шина<br>
-                Тип автомобиля: легковой<br>
-                Ширина профиля: 195 мм<br>
-                Высота профиля: 65<br>
-                Диаметр: 15"<br>
- 
-Технические характеристики<br>
-Конструкция: радиальные<br>
-Индекс нагрузки: 91<br>
-Максимальная нагрузка (на одну шину): 615 кг<br>
-Индекс максимальной скорости: H (до 210 км/ч)<br>
-Способ герметизации: бескамерные<br>
-Технология RunFlat: нет<br>
+            <h3>Обзор</h3>
+               <table>
+                <tr><td>Сезон:</td><td>летняя шина</td></tr>
+                <tr><td>Тип автомобиля:</td><td>легковой</td></tr>    
+                <tr><td>Ширина профиля:</td><td>195 мм</td></tr>
+                <tr><td>Высота профиля:</td><td>65</td></tr>
+                <tr><td>Диаметр:</td><td>15"</td></tr>
+                <tr><td>Сезон:</td><td>летняя шина</td></tr>
+                <th>Технические характеристики</th>
+                <tr><td>Конструкция: </td><td>радиальные</td></tr>
+                <tr><td>Индекс нагрузки:</td><td>91</td></tr><br>
+                <tr><td>Максимальная нагрузка (на одну шину): </td><td>615 кг</td></tr>
+                <tr><td>Индекс максимальной скорости: </td><td>H (до 210 км/ч)</td></tr>
+                <tr><td>Способ герметизации:</td><td>бескамерные</td></tr>
+                <tr><td>Технология RunFlat:</td><td>нет</td></tr>
+</table>
            </div>
            
         </div>
@@ -104,7 +104,7 @@
     
     let tovar = document.querySelector(".tovar");
 
-    tovar.querySelector("h2").innerHTML=prods[0].getElementsByTagName("pname")[0].childNodes[0].nodeValue;
+    tovar.querySelector("h4").innerHTML=prods[0].getElementsByTagName("pname")[0].childNodes[0].nodeValue;
     tovar.querySelector("img").src=prods[0].getElementsByTagName("im")[0].childNodes[0].nodeValue;
     tovar.querySelector("p").innerHTML=prods[0].getElementsByTagName("price")[0].childNodes[0].nodeValue;
 

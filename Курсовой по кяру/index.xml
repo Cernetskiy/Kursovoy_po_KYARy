@@ -7,7 +7,7 @@
        <im>koleso1.jpeg</im>
     </prod>
     <prod>
-        <pname>Шины Ikon NORDMAN 8 185/65 R14 90T Шипованные</pname>
+        <pname>Шина Ikon NORDMAN 8 185/65 R14 90T Шипованные</pname>
         <price>97,00р</price>
         <discount> </discount>
         <im>koleso2.jpeg</im>
@@ -26,31 +26,31 @@
     </prod>
     <prod>
         <pname>Холодильник Hyundai CO1002 (серебристый)</pname>
-        <price>499.00р</price>
+        <price>499,00р</price>
         <discount> </discount>
        <im>fridge.jpeg</im>
     </prod>
     <prod>
         <pname>Холодильник ATLANT MX-2822-80</pname>
-        <price>801.00р</price>
+        <price>801,00р</price>
         <discount> </discount>
         <im>fridge2.jpeg</im>
     </prod>
     <prod>
         <pname>Стул Relmax TLD042 (синий)</pname>
-        <price>41.00р</price>
+        <price>41,00р</price>
         <discount> </discount>
        <im>chair1.jpeg</im>
     </prod>
     <prod>
         <pname>Надувной диван БИВАН 2.0 BVN17-ORGNL-CAM (хаки)</pname>
-        <price>159.00р</price>
+        <price>159,00р</price>
         <discount> </discount>
         <im>sofa1.jpeg</im>
     </prod>
     <prod>
         <pname>Надувной диван БИВАН Классический BVN18-CLS-CAM (хаки)</pname>
-        <price>119.00р</price>
+        <price>119,00р</price>
         <discount> </discount>
        <im>sofa2.jpeg</im>
     </prod>

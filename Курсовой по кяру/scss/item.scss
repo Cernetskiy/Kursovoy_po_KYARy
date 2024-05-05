@@ -15,13 +15,16 @@ body,html
 {
     width:100%;
     height:100%;
-    font-size:24px;
+    font-size:20px;
 }
-
 .rec figure:hover
 {
   box-shadow: 0px 0px 10px 10px rgba(221, 221, 221, 1);
   z-index:10;
+}
+h3
+{
+    margin-left: 3%;
 }
 button:hover
 {
@@ -96,6 +99,7 @@ color: black;
     flex-grow:1;
     margin-top: 5%;
     padding-bottom: 10%;
+    font-size: 17px;
 }
 figure
 {
@@ -111,7 +115,7 @@ figcaption
 {
     height: 50%;
     white-space:wrap;
-    word-break:break-all;
+    //word-break:break-all;
     font-size: 15px;
 }
 p
@@ -189,12 +193,12 @@ input
     gap: 2%;
     .buy
     {
-      margin-bottom: 15%;
+      margin-bottom: 25%;
     }
     div 
     {
         min-width: 10%;
-        flex: 0 0 12em;
+        flex: 0 0 14em;
     }
     figure 
    {
@@ -328,8 +332,24 @@ input
   }
   @media (min-width: 768px) and (max-width: 1000px)
   {
+    .op
+    {
+        font-size: 17px;
+    }
     .contacts
     {
       margin-top: 20%;
+    }
+        .asvg
+    {
+      margin-right: 8%;
+    }
+    .tovar
+    {
+        font-size: 18px;
+    }
+    h3
+    {
+        font-size: 19px;
     }
   }
