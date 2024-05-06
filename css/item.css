@@ -303,6 +303,11 @@ input {
   .tovar {
     font-size: 18px;
   }
+.tovar img
+{
+width:30vh;
+height:30vh;
+}
   h3 {
     font-size: 19px;
   }
