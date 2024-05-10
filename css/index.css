@@ -95,8 +95,8 @@ a:hover {
   flex-flow: column nowrap;
   gap: 0;
   margin: 4% 0%;
-  width: 95vh;
-  height: 50vh;
+  width: 600px;
+  height: 400px;
   vertical-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -357,8 +357,8 @@ input {
     left: 25%;
   }
   .addiv {
-    height: 30vh;
-    width: 50vh;
+    height: 200px;
+    width: 350px;
   }
   .arrow {
     display: none;
@@ -373,8 +373,8 @@ input {
     margin-top: 20%;
   }
   .addiv {
-    width: 70vw;
-    height: 30vh;
+    width: 500px;
+    height: 300px;
   }
   .acatalog {
     margin-left: 15%;

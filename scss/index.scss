@@ -70,7 +70,6 @@ color: black;
 .main
 {
     @include flexcolumn();
-   
     min-width:100%;
     min-height:100%;
 }
@@ -110,8 +109,8 @@ color: black;
    @include flexcolumn();
    gap: 0;
    margin: 4% 0%;
-   width: 95vh;
-   height: 50vh;
+   width: 600px;
+   height: 400px;
    vertical-align:center;
 margin-left: auto;
 margin-right: auto;
@@ -400,8 +399,8 @@ input
   }
   .addiv
   {
-    height: 30vh;
-    width: 50vh;
+    height: 200px;
+    width: 350px;
   
   }
   .arrow
@@ -422,8 +421,8 @@ input
     }
     .addiv
     {
-      width: 80vh;
-      height: 50vh;
+      width: 500px;
+      height: 300px;
 
     }
     .acatalog

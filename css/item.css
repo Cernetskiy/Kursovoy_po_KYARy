@@ -161,8 +161,8 @@ input {
 }
 .tovar img {
   margin-left: 5%;
-  width: 50vh;
-  height: 50vh;
+  width: 350px;
+  height: 350px;
   float: left;
 }
 
@@ -285,6 +285,10 @@ input {
     margin-right: 0%;
     font-size: 20px;
   }
+  .tovar img {
+    height: 200px;
+    width: 200px;
+  }
   .skidka {
     top: 43%;
     left: 25%;
@@ -303,12 +307,11 @@ input {
   .tovar {
     font-size: 18px;
   }
-.tovar img
-{
-width:30vh;
-height:30vh;
-}
   h3 {
     font-size: 19px;
+  }
+  .tovar img {
+    width: 250px;
+    height: 250px;
   }
 }

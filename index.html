@@ -32,6 +32,14 @@
         </form>
 </div>
 <div class="content">
+
+    <div>
+        <h2 style="text-align: center;">Приветствуем вас на нашем веб-сайте!</h2>
+            <p style="width: 70%;margin:1% auto;">Наш сайт является электронным каталогом бытовой техники, в котором содержатся самые различные товары для вашего дома и не только.</p>
+            <p style="width: 70%;margin:1% auto; ">Все товары на нашем сайте представлены с илюстрациями и описанием, что поможет вам определиться при выборе товара.</p>
+            <p style="width: 70%;margin:1% auto; ">Мы надеемся, что вам понравился наш веб-сайт. Удачи вам в поиске товаров!</p>
+    </div>
+
     <div class="addiv">
         <div class="adimg">
             <div class="arrow" id="arrow-left">&#10094</div>
@@ -85,106 +93,7 @@
     </div>
       </div>
   </div>
-  <div>
-      <h4>Рекомендованный товар</h4>
-      <div class="rec" id="recom">
-        <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-           </div>
-           <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-           </div>
-           <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-           </div>
-           <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-           </div>
-           <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-           </div>
-           <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-           </div>
-      </div>
-  </div>
-  <div>
-     <h4>Популярное</h4>
-     <div class="rec" id="popul">
-        <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy"><a href="item.html" style="cursor: pointer;">Перейти</a></p></figcaption>
-          </figure>
-        </div>
-        <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-          </figure>
-       </div>
-       <div class="item">
-        <figure>
-            <img id="fimg" alt="" >
-            <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-      </figure>
-       </div>
-       <div class="item">
-        <figure>
-            <img id="fimg" alt="" >
-            <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-      </figure>
-       </div>
-       <div class="item">
-        <figure>
-            <img id="fimg" alt="" >
-            <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-      </figure>
-       </div>
-       <div class="item">
-        <figure>
-            <img id="fimg" alt="" >
-            <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-      </figure>
-       </div>
-       <div class="item">
-        <figure>
-            <img id="fimg" alt="" >
-            <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy">Нет в наличии</p></figcaption>
-      </figure>
-       </div>
-       </div>
-  </div>
-  <div>
-     <h4>В наличии</h4>
-     <div class="rec" id="nal">
-        <div class="item">
-            <figure>
-                <img id="fimg" alt="" >
-                <figcaption><p><b id="pri"></b> <p class="skidka"></p> <p id="name"></p><p class="buy"><a href="item.html" style="cursor: pointer;">Перейти</a></p></figcaption>
-          </figure>
-        </div>
-        
-       </div>
-  </div>
+ 
 </div>
 <div class="contacts">
     <table cellspacing="10">
@@ -211,9 +120,10 @@
  <script>
     let items = document.querySelectorAll(".item");
     let arcs=document.querySelector("#arc").querySelectorAll(".item");
-    let recoms=document.querySelector("#recom").querySelectorAll(".item");
+   /* let recoms=document.querySelector("#recom").querySelectorAll(".item");
     let populs=document.querySelector("#popul").querySelectorAll(".item");
     let nals=document.querySelector("#nal").querySelectorAll(".item");
+    */
    function funcXml(){
         fetch('index.xml')
   .then(res => res.text())
@@ -223,7 +133,7 @@
     let prods = xmlDoc.getElementsByTagName('prod');
     let k=0;
     for(let i = 0; i < arcs.length; i++){
-        for(let j=k;j<items.length;j++)
+        for(let j=k;j<prods.length;j++)
         {
         if(prods[j].getElementsByTagName("discount")[0].childNodes[0].nodeValue!==" ")
         {
@@ -235,7 +145,7 @@
         }
     }}
 k=0;
-    for(let i = 0; i < populs.length; i++){
+   /* for(let i = 0; i < populs.length; i++){
         for(let j=k;j<items.length;)
         {
          populs[i].querySelector(".skidka").innerHTML = prods[j].getElementsByTagName("discount")[0].childNodes[0].nodeValue;
@@ -261,7 +171,7 @@ k=0;
         nals[0].querySelector("#pri").innerHTML = prods[0].getElementsByTagName("price")[0].childNodes[0].nodeValue;
         nals[0].querySelector("#name").innerHTML = prods[0].getElementsByTagName("pname")[0].childNodes[0].nodeValue;
        nals[0].querySelector("#fimg").src= prods[0].getElementsByTagName("im")[0].childNodes[0].nodeValue;
-
+*/
    })}
   funcXml();
 
@@ -390,6 +300,7 @@ dot8.addEventListener("click", function () {
 setInterval(slideRight,5000);
  window.onload = startSlide;
 startSlide();
+//298 строк
  </script>
 </body>
 </html>
